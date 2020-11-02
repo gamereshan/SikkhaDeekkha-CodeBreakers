@@ -34,6 +34,7 @@
         }
         hr.line{
             border-top: 1px solid black;
+            width: 75%;
         }
         a{
             display: block;
