@@ -4,7 +4,7 @@
     <style>
         #particles-js{
             width: 100%;
-            height: 250px;
+            height: 300px;
             opacity: 0.8;
         }
         .background{
@@ -13,7 +13,7 @@
             width: 100%;
         }
         img{
-            height: 250px;
+            height: 300px;
             width: inherit;
             opacity: 0.2;
         }
@@ -24,13 +24,13 @@
         .jumbotron{
             background: rgba(240, 240, 240, 0.4);
             width: 100%;
-            height: 250px;
+            height: 300px;
             text-align: center;
-            padding-top: 30px;
+            vertical-align: middle;
             z-index: 1;
         }
         .display-4{
-            font-family: Corbel;
+            font-family: Sylfaen;
         }
         hr.line{
             border-top: 1px solid black;
@@ -40,6 +40,13 @@
             position: relative;
             z-index: 9999;
             opacity: 1;
+        }
+        iframe{
+            display: block;
+            width: 250px;
+            height: 200px;
+            border: 0;
+            filter: invert(25%);
         }
     </style>
 @endsection
@@ -65,45 +72,45 @@
         </section>
         <section style="background-color: azure">
             <div class="pt-5">
-                <ul class="list-group-horizontal d-flex justify-content-center list-unstyled">
+                <ul class="list-group-horizontal-md d-flex justify-content-center list-unstyled">
                     <li class="list-inline-item p-3">
-                        <div>
+                        <div class="text-center">
                             <h5><strong>LEARN FROM EXPERTS</strong></h5>
                         </div>
-                        <div class="img-container">
-                            <iframe id="learn" src="{{ asset('icons/noun_experts_3201786.svg') }}" width="200px" height="225px" frameborder="0" style="filter: invert(20%)"></iframe>
+                        <div class="img-container text-center">
+                            <iframe id="learn" src="{{ asset('icons/noun_experts_3201786.svg') }}"></iframe>
                         </div>
                     </li>
                     <li class="list-inline-item p-3">
-                        <div>
+                        <div class="text-center">
                             <h5><strong>FIND QUALITY CONTENTS</strong></h5>
                         </div>
-                        <div class="img-container">
-                            <iframe id="content" src="{{ asset('icons/noun_High Quality Content_1563734.svg') }}" width="200px" height="225px" frameborder="0" style="filter: invert(20%)"></iframe>
+                        <div class="img-container text-center">
+                            <iframe id="content" src="{{ asset('icons/noun_High Quality Content_1563734.svg') }}"></iframe>
                         </div>
                     </li>
                     <li class="list-inline-item p-3">
-                        <div>
+                        <div class="text-center">
                             <h5><strong>SHARPEN YOUR SKILLS</strong></h5>
                         </div>
-                        <div class="img-container">
-                            <iframe id="skill" src="{{ asset('icons/noun_skill_2170300.svg') }}" width="200px" height="225px" frameborder="0" style="filter: invert(20%)"></iframe>
+                        <div class="img-container text-center">
+                            <iframe id="skill" src="{{ asset('icons/noun_skill_2170300.svg') }}"></iframe>
                         </div>
                     </li>
                     <li class="list-inline-item p-3">
-                        <div>
+                        <div class="text-center">
                             <h5><strong>BE INDUSTRY READY</strong></h5>
                         </div>
-                        <div class="img-container">
-                            <iframe id="ready" src="{{ asset('icons/noun_technical expert_2439432.svg') }}" width="200px" height="225px" frameborder="0" style="filter: invert(20%)"></iframe>
+                        <div class="img-container text-center">
+                            <iframe id="ready" src="{{ asset('icons/noun_technical expert_2439432.svg') }}"></iframe>
                         </div>
                     </li>
                     <li class="list-inline-item p-3">
-                        <div>
+                        <div class="text-center">
                             <h5><strong>COMPETE WITH WORLD</strong></h5>
                         </div>
-                        <div class="img-container">
-                            <iframe id="world" src="{{ asset('icons/noun_Globe_1412361.svg') }}" width="200px" height="225px" frameborder="0" style="filter: invert(20%)" class="pl-3"></iframe>
+                        <div class="img-container text-center">
+                            <iframe id="world" src="{{ asset('icons/noun_Globe_1412361.svg') }}"></iframe>
                         </div>
                     </li>
                 </ul>

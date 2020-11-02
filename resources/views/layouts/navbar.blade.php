@@ -1,6 +1,6 @@
 <style>
     nav.navbar{
-        background-color:  #23272b;
+        background-color:  #23272b!important;
         position: fixed;
         width: 100%;
         z-index: 100;
@@ -8,19 +8,19 @@
 
     }
     .navbar-collapse a{
-        text-align: right;
-        color: whitesmoke;
-        font-size: medium;
+        text-align: right!important;
+        color: whitesmoke!important;
+        font-size: medium!important;
     }
     a.navbar-brand{
-        color: deepskyblue;
-        font-weight: bold;
+        color: deepskyblue!important;
+        font-weight: bold!important;
     }
     a.dropdown-item{
-        color: black;
+        color: black!important;
     }
 </style>
-<nav class="navbar navbar-expand-md shadow-lg">
+<nav class="navbar navbar-dark navbar-expand-md shadow-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}
@@ -33,8 +33,12 @@
             <!-- Left Side Of Navbar -->
             @auth
             <ul class="navbar-nav mr-auto">
-                <a class="nav-link" href="{{ route('student.index') }}">Students</a>
-                <a class="nav-link" href="#">Courses</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('student.index') }}">Students</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
             </ul>
             @endauth
             <!-- Right Side Of Navbar -->
